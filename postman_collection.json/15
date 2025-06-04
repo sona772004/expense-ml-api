@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "e0b32f15-5741-491e-af59-e9acfa26bebe",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42696845"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"income\": 53000,\r\n  \"num_dependents\": 2,\r\n  \"num_transactions\": 26,\r\n  \"avg_transaction\": 600,\r\n  \"prev_expense\": 47000,\r\n  \"monthly_expense\": 48000,\r\n  \"is_overspending\": 0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/save-expense",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"save-expense"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

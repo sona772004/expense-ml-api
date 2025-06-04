@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "0cbface2-057f-46cb-9867-29a02fd1d11c",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42696845"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"amount\": 500,\r\n  \"income\": 30000,\r\n  \"monthly_saving_goal\": 5000,\r\n  \"num_dependents\": 2,\r\n  \"num_transactions\": 10,\r\n  \"avg_transaction\": 450,\r\n  \"prev_expense\": 12000\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/realtime-expense",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"realtime-expense"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request graph",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/expense-trends",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"expense-trends"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
